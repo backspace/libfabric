@@ -21,6 +21,8 @@ addons:
 
 env:
     global:
+        - GIT_TRACE_PACKET=true
+        - GIT_TRACE=true
         - CURLOPT_SSL_VERIFYHOST=0
         - CPPFLAGS=-I$HOME/include
         - LDFLAGS=-L$HOME/lib
