@@ -1,5 +1,4 @@
-sudo: required
-dist: trusty
+sudo: false
 language: c
 compiler:
     - clang
@@ -21,9 +20,6 @@ addons:
 
 env:
     global:
-        - GIT_TRACE_PACKET=true
-        - GIT_TRACE=true
-        - CURLOPT_SSL_VERIFYHOST=0
         - CPPFLAGS=-I$HOME/include
         - LDFLAGS=-L$HOME/lib
         - LD_LIBRARY_PATH=$HOME/lib
